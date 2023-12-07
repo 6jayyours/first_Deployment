@@ -25,10 +25,10 @@ public class HomeController {
     private UserRepository userRepository;
 
 
-//    @GetMapping("/")
-//    public String landingPage(){
-//        return "landing-page";
-//    }
+    @GetMapping("/")
+    public String landingPage(){
+        return "landing-page";
+    }
 
     @GetMapping("/login")
     public String login(){
