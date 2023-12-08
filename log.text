@@ -754,3 +754,12 @@
 2023-12-07 19:12:53.507 DEBUG 21476 --- [http-nio-80-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /user/byCategory?category=tshirt&gender=men] with attributes [hasRole('ROLE_USER')]
 2023-12-07 19:12:53.507 DEBUG 21476 --- [http-nio-80-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /user/byCategory?category=tshirt&gender=men
 2023-12-07 19:12:55.048 DEBUG 21476 --- [http-nio-80-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-12-07 19:19:28.802 DEBUG 21476 --- [http-nio-80-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
+2023-12-07 19:19:28.802 DEBUG 21476 --- [http-nio-80-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.eccentricclothing.securityconfig.CustomUserDetails@8f22eb6, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=259FC81AAE627E60760B1A2CF39E7F28], Granted Authorities=[ROLE_USER]]]
+2023-12-07 19:19:28.802 DEBUG 21476 --- [http-nio-80-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.eccentricclothing.securityconfig.CustomUserDetails@8f22eb6, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=259FC81AAE627E60760B1A2CF39E7F28], Granted Authorities=[ROLE_USER]]]
+2023-12-07 19:19:28.809 DEBUG 21476 --- [http-nio-80-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /login] with attributes [permitAll]
+2023-12-07 19:19:28.809 DEBUG 21476 --- [http-nio-80-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /login
+2023-12-07 19:19:28.818 DEBUG 21476 --- [http-nio-80-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-12-07 19:29:56.554  INFO 21476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 19:29:56.577  INFO 21476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-07 19:30:06.600  INFO 21476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
